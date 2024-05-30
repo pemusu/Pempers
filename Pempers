@@ -25,7 +25,7 @@ function FindNearestEnemy()
                     game:GetService("Workspace").CurrentCamera:WorldToViewportPoint(Character.HumanoidRootPart.Position)
 
                 if IsVisibleOnViewport then
-                    local Distance = (CenterPosition - Vector2.new(Position.X, Position.Y)).Magnitude
+                    local Distance = (CenterPosition - Pempers2.new(Position.X, Position.Y)).Magnitude
                     if Distance < ClosestDistance then
                         ClosestPlayer = Character.HumanoidRootPart
                         ClosestDistance = Distance
